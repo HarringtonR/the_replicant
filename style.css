@@ -1,0 +1,493 @@
+/*LANDING PAGE*/
+* {
+  margin: 0 auto;
+}
+
+.hide {
+  display: none !important;}
+
+body {
+  background: black;
+}
+
+@font-face {
+  font-family: GraublauWeb;
+  src: url("./resources/Anurati-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: manaspc;
+  src: url(./resources/manaspc.ttf);
+}
+
+
+h1 {
+  font-family: GraublauWeb;
+  font-size: 100px;
+  opacity: .7;
+  color: white;
+  display: flex;
+  flex-shrink: 2;
+  /*  position: relative;*/
+}
+
+button {
+  animation: color-change 5s linear infinite alternate;
+  color: white;
+  opacity: .9;
+  margin-top: 10px;
+  text-align: center;
+  height: 30px;
+  width: 120px;
+  font-family: manaspc;
+  font-size: 13px;
+  background: none;
+  border: 3px white;
+}
+
+span {
+  animation: color-change 5s linear infinite alternate;
+  opacity: .9;
+  margin-top: 10px;
+  text-align: center;
+  height: 30px;
+  width: 120px;
+  font-family: manaspc;
+  font-size: 13px;
+  background: none;
+  border: 3px white;
+  color: white;
+}
+
+span p {
+  padding-top: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./pictures/TheLastNight_08.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+#scoresheet {
+  animation: color-change 5s linear infinite alternate;
+  position: absolute;
+  height: 100px;
+  width: 75px;
+  display: inline-flex;
+  opacity: .5
+}
+
+
+@keyframes color-change {
+  0% {
+    background-color: #8BEB83;
+    opacity: .9;
+  }
+
+  50% {
+    background-color: #F6CC43;
+    opacity: .6
+  }
+
+  100% {
+    background-color: F06827;
+    opacity: .4
+  }
+
+}
+
+
+@media screen and (max-width: 439px) {
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 720px) {
+  h1 {
+    font-size: 65px;
+  }
+}
+
+p {
+  color: white;
+  font-family: manaspc;
+  opacity: .8
+}
+
+nav {
+  display: flex;
+  /*  flex-direction: row;*/
+  justify-content: left;
+  width: 500px;
+}
+
+/*PAGE 2 Bedroom*/
+#look {
+  width: 160px;
+}
+
+#apartment {
+  background-image: url('./pictures/bedroom.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#scene {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  padding-top: 10px;
+  margin-left: 140px;
+  margin-right: 140px;
+  width: 540px;
+}
+
+#outsideView {
+  background-image: url('./pictures/window.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#windowBox {
+  width: 110px;
+  height: 130px;
+  position: absolute;
+  margin-top: 290px;
+  margin-left: 320px;
+  opacity: 0;
+  transition: 0.5s;
+  background: black;
+}
+
+#windowBox:hover {
+  animation: color-change 5s linear infinite alternate;
+  opacity: .2;
+}
+
+#dogMoon {
+  padding-top: 20px;
+}
+
+#moon {
+  display: flex;
+  flex-direction: column;
+}
+
+#computer {
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  margin-top: 510px;
+  margin-left: 490px;
+  background: white;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotate(-10deg);
+}
+
+#computer:hover {
+  opacity: .2;
+  animation: color-change 5s linear infinite alternate;
+
+}
+
+#notes {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  margin-top: 545px;
+  margin-left: 330px;
+  background: white;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotate(-10deg);
+}
+
+#notes:hover {
+  opacity: .2;
+  animation: color-change 5s linear infinite alternate;
+}
+
+#noteMessage {
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 250px;
+  background: black;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 2s linear;
+}
+
+#noteMessage button {
+
+  color: white;
+  opacity: .9;
+  margin-top: 10px;
+  text-align: center;
+  font-family: manaspc;
+  background: none;
+  border: 3px white;
+}
+
+#computerTextBox {
+  visibility: hidden;
+  width: 200px;
+  height: 130px;
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 450px;
+  background: black;
+  opacity: 0;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 2s linear;
+}
+
+
+/*STREET TEXT*/
+
+
+#street {
+  background-image: url('./pictures/3d0fd842be0ccdaf97d960312c7b34e6.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#streetText {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  padding-top: 10px;
+  margin-left: 180px;
+  margin-right: 140px;
+  width: 450px;
+}
+
+#emailResponse {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  padding-top: 50px;
+  margin-left: 180px;
+  margin-right: 140px;
+  width: 450px;
+}
+
+#compText {
+  position: absolute;
+  padding-top: 20px;
+}
+
+#car {
+  display: none;
+  width: 165px;
+  height: 50px;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 360px;
+}
+
+#car:hover {
+  animation: color-change 5s linear infinite alternate;
+}
+
+/*computer STORE STUFF*/
+#computerStore {
+  background-image: url('./pictures/computer.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+
+/*BAR*/
+#bar {
+  background-image: url('./pictures/bar.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#barText {
+  padding-top: 20px;
+  position: absolute;
+}
+
+.drinks {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+#displayNav {
+  visibility: hidden;
+  opacity: 0;
+  transition: 2s linear;
+  margin-top: 100px;
+}
+
+#roofFinal {
+  background-image: url('./pictures/final.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#computerUnknown {
+  background-image: url('./pictures/videogame.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#computerNeighbor {
+  background-image: url('./pictures/benchguy.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#bench {
+  width: 30px;
+  height: 90px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 130px;
+  background: black;
+  opacity: 0;
+  transition: 1s;
+}
+
+#bench:hover {
+  animation: color-change 5s linear infinite alternate;
+  opacity: .2;
+}
+
+#neigh {
+  padding-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#wrongDirection {
+  padding-top: 20px;
+}
+
+#restartDeath {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+#death {
+  background-image: url('./pictures/tired.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+  3
+}
+
+#final {
+  padding-top: 15px;
+  position: absolute;
+  width: 700px;
+}
+
+#navFinal {
+  padding-top: 75px;
+
+}
+
+#displayChoice {
+  margin-top: 75px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 2s linear;
+}
+
+#lastScreen {
+  background-image: url('./pictures/win.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 800px;
+  width: 800px;
+}
+
+#restartVideoGame {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+#end {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 16px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 20px;
+  opacity: .3;
+  color: white;
+}
+
+#restartFinal {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#regrets {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+#winTitle {
+  opacity: .8;
+  font-size: 40px;
+}

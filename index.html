@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>THE REPLICANT</title>
+    <link href="style.css"  rel="stylesheet" type="text/css">
+  </head>
+  <body id="container">
+    <div class ="menu showHide"  id='landing' onmouseover="playAudio()">
+      <h1>THE REPLICANT</h1>
+      <button class='animate' id ='btn'>Start</button>
+      <!-- <iframe src="./audio/Lorn - Acid Rain (Official Music Video).mp3"  style="display:none" id="iframeAudio"></iframe> -->
+      <audio id="audioID">
+        <source src="./audio/Lorn - Acid Rain (Official Music Video).mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <!-- Apartment -->
+    <div class='hide' id='apartment' onmouseover="playApt()">
+      <audio id="audioApt">
+        <source src="./audio/scaryWind.m4a" type="audio/mpeg">
+      </audio>
+      <!--  <audio id="audioApt">
+        <source src="./audio/drivetick.mp3" type="audio/mpeg">
+      </audio> -->
+      <audio id="keyboard">
+        <source src="./audio/keyboard.mp3" type="audio/mpeg">
+      </audio>
+      <nav>
+        <button class='animate' id='restartDeath'>Restart.</button>
+        <button class='animate' id ='look' onClick ='typeWriter()'> Look Around Apartment</button>
+        <button class='animate counter' id ='outsideBtn'>Look outside</button>
+      </nav>
+      <p id='scene'></p>
+      <!-- windown view -->
+      <div id='windowBox'>
+      </div>
+      <!-- computer div -->
+      <div id='computerTextBox'>
+        <div class='msgBox'>
+          <p id='noteMessge'>You go to your computer and pull up the dog tracking device. It shows a location near a seedy bar on 47th street. Do you go?</p>
+          <input id='responseComp' type="text" placeholder='Yes or No'><button id='buttonAlertComp'>Submit</button>
+        </div>
+      </div>
+      <div id= 'computer'>
+      </div>
+      <!-- note div -->
+      <div id=noteMessage>
+        <div class='msgBox'>
+          <p id='noteMessge'>It reads: Revenge is sweet. I’m taking your dog."....... You realize that the perfectly formed letters are a tell-tale sign of a replicant. You know of a popular replicant hang-out near a black-market computer store. Do you go?</p>
+          <input id='response' type="text" placeholder='Yes or No'><button id='buttonAlert'>Submit</button>
+        </div>
+      </div>
+      <div id= 'notes' onclick ='noteClick()'>
+      </div>
+      <!-- <iframe src="./audio/scaryWind.m4a" allow="autoplay" style="display:none" id="iframeAudio"></iframe> -->
+    </div>
+    <!-- WINDOW -->
+    <div class='hide' id='outsideView'>
+      <nav id ='moon'>
+        <button class='animate' id='windowButton' onclick='windowButton()'> Go back</button>
+        <p id='dogMoon'></p>
+      </nav>
+    </div>
+    <!-- Outside -->
+    <div class='hide' id='street'>
+      <audio id="audioStreet">
+        <source src="./audio/suburbanstreet.mp3" type="audio/mpeg">
+      </audio>
+      <nav>
+        <button class='animate' id='streetBtn'> Go back to apartment</button>
+        <button class='animate' onclick ='typeStreet()'> Look around..</button>
+      </nav>
+      <p id='streetText'></p>
+      <p id='emailResponse'></p>
+      <!-- CAR Div -->
+      <div id= 'car' onclick='toBar()'>
+      </div>
+      <!-- <iframe src="./audio/scaryWind.m4a" allow="autoplay" style="display:none" id="iframeAudio"></iframe> -->
+    </div>
+    <!-- COMPUTER STORE -->
+    <div class='hide' id='computerStore'>
+      <audio id="audioCompStore">
+        <source src="./audio/bladerunner.m4a" type="audio/mpeg">
+      </audio>
+      <nav>
+        <button class='animate' id='compBtn'> Go back to apartment</button>
+        <button class='animate' onclick= 'typeComputer()'> Look around..</button>
+      </nav>
+      <p id='compText'></p>
+      <nav  id='displayChoice'>
+        <button class='animate drinks' id='followNP' onclick='neigh()'> Bandage Hand</button>
+        <button class='animate drinks' id='followUKP' onclick ='wrong()'>Timid Man</button>
+      </nav>
+    </div>
+    <!-- BAR -->
+    <div class='hide' id='bar'>
+      <audio id="audioCompStore">
+        <source src="./audio/bladerunner.m4a" type="audio/mpeg">
+      </audio>
+      <nav>
+        <button class='animate' id='barButton'> Go back to apartment</button>
+        <button class='animate' onclick ='barText()'> Look around bar..</button>
+      </nav>
+      <p id='barText'></p>
+      <nav id ='displayNav'>
+        <button class='animate drinks' id='drink1'> Their Drink</button>
+        <button class='animate drinks' id='drink2'>Your Drink.</button>
+      </nav>
+    </div>
+    <!-- rooftopFinal -->
+    <div class='hide' id='roofFinal'>
+      <audio id="audioFinal">
+        <source src="./audio/nycaudio.m4a" type="audio/mpeg">
+      </audio>
+      <p id='final'></p>
+      <nav id='navFinal'>
+        <button class='animate' id='restart'> Look for Replicant</button>
+        <!-- <button class='animate' onclick='final()'>Talk</button> -->
+      </nav>
+      <h3 id='winTitle'></h3>
+    </div>
+    <!-- DeathFinal -->
+    <div class ='hide' id='death'>
+      <audio id="audioDeath">
+        <source src="./audio/deathclip.m4a" type="audio/mpeg">
+      </audio>
+      <p id='regrets'></p>
+      <button class='animate' id='restartDeath' onclick= 'restartFun()'>Start over.</button>
+    </div>
+    <!-- computer success final -->
+    <div class='hide' id='computerUnknown'>
+      <!-- <audio id="audioFinal">
+        <source src="./audio/nycaudio.m4a" type="audio/mpeg">
+      </audio> -->
+      <button class='animate restart' id='restartVideoGame'> Keep Looking </button>
+      <p id= 'wrongDirection'></p>
+    </div>
+    <!-- computer fail final -->
+    <div class='hide' id='computerNeighbor'>
+      <p id='neigh'></p>
+      <div id='bench' onclick='end()'>
+      </div>
+    </div>
+    <div class='hide' id='lastScreen'>
+      <audio id="lastAudio">
+        <source src="./audio/deathclip.m4a" type="audio/mpeg">
+      </audio>
+      <p id='end'></p>
+      <nav id='navFinal'>
+        <button class='animate restart' id='restartFinal'> Keep Looking</button>
+      </nav>
+      <h3 id='winTitle'></h>
+    </div>
+    <script src="app.js" type="text/javascript" charset="utf-8" async defer></script>
+  </body>
+</html>
