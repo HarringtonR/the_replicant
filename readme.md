@@ -28,16 +28,6 @@ You are **responsible** for scheduling time with your squad to seek approval for
 "The Replicant" is a choose your own story based game. The goal of the game is to survive and to find out what happened in our apartment and find your dog. You will receive a point for each and when you achieve both of these things you will win the game. But the path is not always clear.
 
 
-
-
-## Wireframes
-
-Include images of your wireframes. 
-
--  [Sketch WireFrame](https://imgur.com/H3f1OHs.png "Sketch Wireframe")
--  [WhiteBoard WireFrame](https://imgur.com/a/te7FEnc "white board")
-
-
 ## Priority Matrix
 
 -  Have images for the files\storyboards
