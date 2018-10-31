@@ -21,7 +21,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 # THE REPLICANT
 
-[Game Cover](https://imgur.com/a/qh5G20M "THE REPLICANT")
+[Game Cover](https://imgur.com/YSDM2MG "THE REPLICANT")
 
 ## Project Description
 
